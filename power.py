@@ -34,6 +34,13 @@ def process_sispm():
 
 print "Content-Type: text/html"
 print
+print '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"'
+print '"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">'
+print '<html>'
+print '<header>'
+print '<title>SISPM power manager</title>'
+print '</header>'
+print '<body>'
 print '<div align="center">'
 print "<a href='power.py'>sispm power control</a><br/><br/>"
 
@@ -44,6 +51,8 @@ except sispm.SispmException as e:
     print "error: %s" % e
 
 
+print '</div>'
+print '</body>'
 print '</html>'
 
 
