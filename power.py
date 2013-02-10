@@ -27,10 +27,10 @@ def process_sispm():
         status_name = 'OFF';
         if status:
             status_name = 'ON'
-        toggle = "<a class='%s' href='power.py?outlet=%s&amp;action=%s'>%s</a>" % \
-            (status_name, outlet, not(status), status_name)
         print "<div class='plug'>"
-        print "Status of outlet %s: %s<br/><br/>" % (outlet, toggle)
+        tgt = 'power.py?outlet=%s&amp;action=%s' % (outlet, not(status))
+        print "<a class='%s' href='%s'>Status of outlet %s: %s</a>" % \
+            (status_name, tgt, outlet, status_name)
         print "</div>"
 
 
