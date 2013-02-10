@@ -61,8 +61,10 @@ except sispm.SispmException as e:
 
 print '</div>'
 print '''
-<div class="reload">
-<a href="power.py">Reload</a>
+<div>
+<a href="power.py">
+<button class="reload">Reload</button>
+</a>
 </div>
 '''
 print '</body>'
