@@ -1,13 +1,32 @@
-body{
+body {
     text-align: center;
+    font-family: sans-serif;
+}
+div.sispm_status {
+    font-size: 150%;
 }
 
+a.ON:link {color: #00FF00;}     /* unvisited */
+a.ON:visited {color: #00FF00;}  /* visited */
+a.OFF:link {color: #FF0000;}     /* unvisited */
+a.OFF:visited {color: #FF0000;}  /* visited */
+
 @media only screen and (max-device-width : 721px) and
-    (-webkit-min-device-pixel-ratio : 2) and
-    (orientation : portrait) {
-        body{
-            background-color: #000;
-            color: #fff;
-            font-size: 200%;
-        }
+        (-webkit-min-device-pixel-ratio : 2) and
+        (orientation : portrait) {
+    body {
+        background-color: #000;
+        color: #fff;
+    }
+    h1 {
+        margin-bottom: 15%;
+    }
+    div.sispm_status {
+        font-size: 180%;
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+    div.plug {
+        margin-top: 10%;
+    }
 }

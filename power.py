@@ -27,9 +27,11 @@ def process_sispm():
         status_name = 'OFF';
         if status:
             status_name = 'ON'
-        toggle = "<a href='power.py?outlet=%s&amp;action=%s'>%s</a>" % \
-            (outlet, not(status), status_name)
+        toggle = "<a class='%s' href='power.py?outlet=%s&amp;action=%s'>%s</a>" % \
+            (status_name, outlet, not(status), status_name)
+        print "<div class='plug'>"
         print "Status of outlet %s: %s<br/><br/>" % (outlet, toggle)
+        print "</div>"
 
 
 print "Content-Type: text/html; charset=utf8"
@@ -47,8 +49,8 @@ print '''<?xml version="1.0" encoding="UTF-8"?>
 '''
 
 print '<body>'
-print "<a href='power.py'>sispm power control</a><br/><br/>"
-print '<div class="outlets">'
+print '<h1>SiS-PM web control</h1>'
+print '<div class="sispm_status">'
 
 try:
     dev=sispm.Sispm()
