@@ -27,19 +27,21 @@ def process_sispm():
         status_name = 'OFF';
         if status:
             status_name = 'ON'
-        toggle = "<a href='power.py?outlet=%s&action=%s'>%s</a>" % \
+        toggle = "<a href='power.py?outlet=%s&amp;action=%s'>%s</a>" % \
             (outlet, not(status), status_name)
         print "Status of outlet %s: %s<br/><br/>" % (outlet, toggle)
 
 
-print "Content-Type: text/html"
+print "Content-Type: text/html; charset=utf8"
 print
-print '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"'
-print '"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">'
-print '<html>'
-print '<header>'
-print '<title>SISPM power manager</title>'
-print '</header>'
+print '''<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>SISPM power manager</title>
+</head>
+'''
+
 print '<body>'
 print '<div align="center">'
 print "<a href='power.py'>sispm power control</a><br/><br/>"
