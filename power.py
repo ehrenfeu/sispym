@@ -27,7 +27,7 @@ def process_sispm():
         status_name = 'OFF';
         if status:
             status_name = 'ON'
-        print "<div class='plug' id='%s'>" % status_name
+        print "<div class='plug_%s'>" % status_name
         tgt = 'power.py?outlet=%s&amp;action=%s' % (outlet, not(status))
         print "<a class='plug' href='%s'>Status of outlet %s: %s</a>" % \
             (tgt, outlet, status_name)
