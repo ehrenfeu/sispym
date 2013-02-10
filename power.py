@@ -40,12 +40,15 @@ print '''<?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>SISPM power manager</title>
+<meta name="viewport" content="width=320; initial-scale=1.0;
+    maximum-scale=1.0; user-scalable=0;"/>
+<link rel="stylesheet" type="text/css" href="sispym.css"/>
 </head>
 '''
 
 print '<body>'
-print '<div align="center">'
 print "<a href='power.py'>sispm power control</a><br/><br/>"
+print '<div class="outlets">'
 
 try:
     dev=sispm.Sispm()

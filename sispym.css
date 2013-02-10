@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+}
+
+@media only screen and (max-device-width : 721px) and
+    (-webkit-min-device-pixel-ratio : 2) and
+    (orientation : portrait) {
+        body{
+            background-color: #000;
+            color: #fff;
+            font-size: 200%;
+        }
+}
