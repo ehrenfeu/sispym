@@ -34,18 +34,10 @@ div.plug_OFF {
         color: #fff;
     }
     div.sispm_status {
-        font-size: 180%;
-        margin-top: 10%;
-        margin-bottom: 10%;
+        font-size: 160%;
     }
     div.plug_ON, div.plug_OFF {
-        margin-top: 15%;
-        margin-bottom: 15%;
-    }
-    div.plug_ON {
-        background-color: #090;
-    }
-    div.plug_OFF {
-        background-color: #900;
+        margin-top: 12%;
+        margin-bottom: 12%;
     }
 }
