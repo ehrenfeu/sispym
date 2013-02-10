@@ -17,9 +17,13 @@ a.plug:link, a.plug:visited, a.plug:active, a.plug:hover {
 }
 div.plug_ON {
     background-color: #0c0;
+    background: linear-gradient(to top, #b4ddb4 0%,#83c783 10%,#52b152 20%,#008a00 80%,#005700 90%,#002400 100%); /* FF */
+    background: -webkit-linear-gradient(bottom, #b4ddb4 0%,#83c783 10%,#52b152 20%,#008a00 80%,#005700 90%,#002400 100%); /* Chrome10+,Safari5.1+ */
 }
 div.plug_OFF {
     background-color: #c00;
+    background: linear-gradient(to bottom, #ddb4b4 0%,#c78383 10%,#b15252 20%,#8a0000 80%,#570000 90%,#240000 100%); /* FF */
+    background: -webkit-linear-gradient(top, #ddb4b4 0%,#c78383 10%,#b15252 20%,#8a0000 80%,#570000 90%,#240000 100%); /* Chrome10+,Safari5.1+ */
 }
 
 @media only screen and (max-device-width : 721px) and
