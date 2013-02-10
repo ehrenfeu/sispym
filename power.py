@@ -27,10 +27,10 @@ def process_sispm():
         status_name = 'OFF';
         if status:
             status_name = 'ON'
-        print "<div class='plug'>"
+        print "<div class='plug' id='%s'>" % status_name
         tgt = 'power.py?outlet=%s&amp;action=%s' % (outlet, not(status))
-        print "<a class='%s' href='%s'>Status of outlet %s: %s</a>" % \
-            (status_name, tgt, outlet, status_name)
+        print "<a class='plug' href='%s'>Status of outlet %s: %s</a>" % \
+            (tgt, outlet, status_name)
         print "</div>"
 
 
@@ -60,6 +60,11 @@ except sispm.SispmException as e:
 
 
 print '</div>'
+print '''
+<div class="reload">
+<a href="power.py">Reload</a>
+</div>
+'''
 print '</body>'
 print '</html>'
 
