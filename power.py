@@ -59,22 +59,14 @@ except sispm.SispmException as e:
     print "error: %s" % e
 
 
-print '</div>'
 print '''
+</div>
 <div>
 <a href="power.py">
 <button class="reload">Reload</button>
 </a>
 </div>
+</body>
+</html>
 '''
-print '</body>'
-print '</html>'
 
-
-# from subprocess import call
-# from subprocess import Popen, PIPE
-# for socket in [1, 2, 3, 4]:
-#     p = Popen(["sispmctl", "-q", "-g", str(socket)], stdout=PIPE)
-#     out, err = p.communicate()
-#     toggle = "<a href='power_toggle_%s.py'>%s</a>" % (socket, out)
-#     print "Status of outlet %s: %s<br/><br/>" % (socket, toggle)
