@@ -1,3 +1,6 @@
+# vim swap filew
+.*.sw?
+
 *.py[cod]
 
 # C extensions
