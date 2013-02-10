@@ -8,7 +8,7 @@ div.sispm_status {
 div.plug_ON, div.plug_OFF {
     margin: 2%;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 a.plug:link, a.plug:visited, a.plug:active, a.plug:hover {
     color: #000;
@@ -28,13 +28,10 @@ div.plug_OFF {
         background-color: #000;
         color: #fff;
     }
-    h1 {
-        margin-bottom: 15%;
-    }
     div.sispm_status {
         font-size: 180%;
-        margin-top: 20%;
-        margin-bottom: 20%;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
     div.plug_ON, div.plug_OFF {
         margin-top: 15%;
